@@ -38,14 +38,12 @@ img {
 }
 
 .container {
-    width: 1158px;
+    max-width: 1158px;
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
 }
-
-
 
 ul {
     list-style-type: none;
@@ -237,9 +235,7 @@ p {
     clip-path: inset(100%);
     border: 0;
 }
-.twoh {
-    margin-bottom: 8px;
-}
+
 
 .sectiontwo ul {
     display: flex;
@@ -249,11 +245,85 @@ p {
 .link-two {
     width: calc((100% - 72px) / 4);
 }
-.sectiontwo h3 {
+
+.twoh {
     font-weight: 500;
     font-size: 20px;
     color: #2e2f42;
+    margin-bottom: 8px;
+} 
+
+@media (max-width: 320px) {
+.sectiontwo ul {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 320px;
+  margin: 0 auto;
+  gap: 72px;
+
 }
+.sectiontwo {
+  padding: 96px 16px;
+
+}
+.twoh{
+  text-align: center;
+
+}
+}
+@media (max-width: 320px) {
+  .link-two .sectiontwo-icon-svg {
+    display: none;
+  }
+  .list-section-two li {
+    width: 100%; 
+  }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0;
+    }
+
+  .sectiontwo ul {
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 736px;
+    margin: 0 auto;
+    gap: 24px;
+  }
+  .link-two .sectiontwo-icon-svg {
+    display: none;
+  }
+  .link-two {
+    width: calc((100% - 24px) / 2);
+  }
+  .sectiontwo {
+  padding: 96px 16px;
+  }
+
+  .twoh{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+
+}
+.twop{
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  width: 100%;
+
+}
+
+}
+
 .sectiontwo-icon-svg{
     display: flex;
     background-color: #f4f4fd;
@@ -308,6 +378,7 @@ p {
 }
 .sectionthree {
     background-color: #F4F4FD;
+    max-width: 1440;
 }
 
 .sectionthree .list-ulr {
@@ -350,6 +421,48 @@ p {
     fill: #F4F4FD;
 }
 
+@media (max-width: 320px) {
+.ulr {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 320px;
+  margin: 0 auto;
+  gap: 72px;
+  }
+
+  .ulr li {
+    width: 100%;
+  }
+
+  .threeimg {
+    width: 100%; 
+    height: auto;
+  }
+
+  .team {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 2%;
+    text-align: center;
+    margin-bottom: 72px;
+  }
+
+  .team-ulr {
+    padding: 32px 16px;
+  }
+
+  .sectionthree-items {
+    gap: 24px;
+  }
+
+  .sectionthree {
+  padding: 96px 28px;
+  }
+
+
+}
 
 /* section 4 */
 
@@ -595,7 +708,7 @@ p {
   align-items: center;
   justify-content: center;
   
-  opacity: 1;
+  opacity: 0;
   pointer-events: none;
 }
 
