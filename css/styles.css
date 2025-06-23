@@ -252,6 +252,7 @@ p {
     color: #2e2f42;
     margin-bottom: 8px;
 } 
+/* media */
 
 @media (max-width: 320px) {
 .sectiontwo ul {
@@ -282,7 +283,7 @@ p {
 }
 
 @media (max-width: 768px) {
-    .container {
+    .sectiontwo-container {
         padding: 0;
     }
 
@@ -421,6 +422,8 @@ p {
     fill: #F4F4FD;
 }
 
+/* media */
+
 @media (max-width: 320px) {
 .ulr {
   justify-content: center;
@@ -444,7 +447,7 @@ p {
     font-weight: 700;
     font-size: 36px;
     line-height: 40px;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
     text-align: center;
     margin-bottom: 72px;
   }
@@ -460,8 +463,52 @@ p {
   .sectionthree {
   padding: 96px 28px;
   }
+}
 
+@media (min-width: 321px) and (max-width: 768px) {
+  .ulr {
+      justify-content: flex-start;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      gap: 24px;
+  }
 
+  .list-ulr {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .list-ulr:nth-child(1),
+  .list-ulr:nth-child(2) {
+    margin-bottom: 64px;
+  }
+
+  .threeimg {
+    width: 100%; 
+    height: auto;
+  }
+
+  .team {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 72px;
+  }
+
+  .team-ulr {
+    padding: 32px 16px;
+  }
+
+  .sectionthree-items {
+    gap: 24px;
+  }
+
+  .sectionthree {
+  padding: 96px 108px;
+  }
 }
 
 /* section 4 */
@@ -545,6 +592,70 @@ p {
   0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+/* media */
+
+@media (max-width: 320px) {
+
+  .sectionfour {
+    padding: 96px 16px;
+
+}
+
+
+.portfolio-url {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 320px;
+    margin: 0 auto;
+    gap: 48px;
+  }
+
+  .portfolio {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 72px;
+  }
+
+}
+
+
+@media (min-width: 321px) and (max-width: 768px) {
+
+  .sectionfour {
+    padding: 96px 16px;
+
+}
+
+
+.portfolio-url {
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    gap: 72px 24px;
+    padding: 0;
+  }
+
+  .list-portfolio {
+    flex-basis: calc((100% - 24px) / 2); /* 2 колонки */
+    max-width: 100%;
+  }
+
+
+  .portfolio {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 72px;
+  }
+
+}
 
 /* footer */
 
@@ -638,7 +749,7 @@ p {
     align-items: center;
     width: 100%;
     height: 100%;
-    margin-left: 80px;
+    margin-left: 30px;
 }
 
 .footer-sub {
@@ -650,7 +761,7 @@ p {
 .subscribe-text {
     margin-bottom: 16px;
     font-weight: 500;
-    margin-left: 80px;
+    margin-left: 50px;
 }
 
 
@@ -687,10 +798,102 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 .subscribe-icons {
   margin-left: 16px;
+}
+
+/* media */
+@media (max-width: 320px) {
+  .footer {
+    padding: 96px 16px;
+  }
+
+  .footer-main {
+      flex-direction: column;
+      align-items: center; 
+      gap: 72px; 
+  }
+
+  .footer-content {
+      margin-right: 0; 
+      text-align: center; 
+  }
+
+  .social-media{
+    justify-content: center;
+    text-align: center;
+  }
+
+  .subscribe-text {
+      margin: auto;
+      text-align: center; 
+      justify-content: center;
+  }
+
+  .footer-form {
+      flex-direction: column; 
+      gap: 16px; 
+      margin-left: 0; 
+      width: 100%;
+  }
+
+  .subscribe-input {
+      max-width: 100%; 
+  }
+
+  .footer-sub {
+      align-items: center; 
+      gap: 16px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+
+  .footer {
+     padding: 96px 16px;
+  }
+
+  .footer-main {
+      flex-wrap: wrap; 
+      justify-content: center;
+      gap: 72px 24px; 
+  }
+  .footer-webmed {
+      display: flex;
+      gap: 24px;
+  }
+
+  .footer-content {
+      margin-right: 0; 
+  }
+
+  .subscribe-text {
+      margin-left: 0; 
+  }
+
+  .footer-form {
+      margin-left: 0; 
+      width: 100%;
+      flex-wrap: wrap; 
+      gap: 24px; 
+  }
+
+  .footer-sub {
+      align-items: flex-start; 
+  }
+}
+
+
+@media (min-width: 769px) {
+  .footer {
+      max-width: 1158px; 
+      padding: 100px 15px;
+  }
+
+
 }
 
 /* backdrop */
