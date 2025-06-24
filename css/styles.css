@@ -636,7 +636,7 @@ p {
     width: 40px;
     height: 40px;
   }
-  
+
    .sectionthree-container {
     padding: 96px 0;
   }
@@ -763,7 +763,7 @@ p {
 @media (max-width: 320px) {
 
   .sectionfour {
-    padding: 96px 16px;
+    padding: 96px 0;
 
 }
 
@@ -792,7 +792,7 @@ p {
 @media (min-width: 321px) and (max-width: 768px) {
 
   .sectionfour {
-    padding: 96px 16px;
+    padding: 96px 0;
 
 }
 
