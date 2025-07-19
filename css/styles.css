@@ -619,12 +619,16 @@ p {
     margin: 0 auto;
     gap: 72px;
   }
+  
+  .list-ulr {
+    width: auto;
+  }
 
-  h3 {
+  .three-h {
     font-family: Roboto;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 40px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
     letter-spacing: 2%;
     text-align: center;
   }
@@ -830,8 +834,7 @@ p {
 
   .sectionfour {
     padding: 96px 0;
-
-}
+  }
 
 
 .portfolio-url {
@@ -1067,6 +1070,7 @@ p {
       flex-wrap: wrap; 
       justify-content: flex-start;
       gap: 72px 24px; 
+      padding: 0;
   }
   .footer-webmed {
       display: flex;
