@@ -1303,6 +1303,11 @@ input[type="checkbox"]:checked + .checkbox-label .checkbox-box {
     border-radius: 4px;
   }
 
+  .link:hover,
+  .link:focus{
+    color: #404bbf;
+  }
+
 }
 
 
@@ -1408,6 +1413,13 @@ input[type="checkbox"]:checked + .checkbox-label .checkbox-box {
 .address-menu-li:hover,
 .address-menu-li:focus {
   color: #404bbf;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-menu-li:hover,
+  .nav-menu-li:focus {
+    color: #404bbf;
+  }
 }
 
 .menu-items {
